@@ -5,6 +5,7 @@ using TMPro;
 
 public class ItemPickUp : Interactable
 {
+    public Item item;
     public override void Interact()
     {
         PickUp();
@@ -12,6 +13,11 @@ public class ItemPickUp : Interactable
 
     void PickUp()
     {
-        Destroy(gameObject);
+        bool wasPickedUp = Inventory.instance.Add(item);
+
+        if (wasPickedUp)
+        {
+           Destroy(gameObject);
+        }
     }
 }

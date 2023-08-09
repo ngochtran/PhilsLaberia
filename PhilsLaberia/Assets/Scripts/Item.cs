@@ -9,4 +9,9 @@ public class Item : ScriptableObject
     public int value;
     public string description;
     public Sprite icon;
+
+    public virtual void Use()
+    {
+        Debug.Log("Using");
+    }
 }

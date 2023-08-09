@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7587946099236842051}
   - component: {fileID: 582590265493587144}
-  - component: {fileID: 3908502512505759959}
+  - component: {fileID: 7339984086185876539}
   - component: {fileID: 8380066670430422835}
   m_Layer: 0
   m_Name: Empty Conical Tube
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3908502512505759959
+--- !u!114 &7339984086185876539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,10 +95,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 372646132961913095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecdde493bc175a043948aab6450a506d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2fcaec9baf580459ca6ce82ab5cdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 0f6175439f813ad43bf3e88d3f621502, type: 2}
+  item: {fileID: 0}
 --- !u!61 &8380066670430422835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06847225, y: -0.002976954}

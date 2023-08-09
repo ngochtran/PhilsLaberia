@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1479504919676413072}
   - component: {fileID: 1479504919676413073}
   - component: {fileID: 7279357397614755442}
-  - component: {fileID: 2013812546294631165}
   - component: {fileID: 1783289121338244674}
   m_Layer: 0
   m_Name: MilliQ Water (50 mL)
@@ -99,19 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2fcaec9baf580459ca6ce82ab5cdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2013812546294631165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479504919676413075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecdde493bc175a043948aab6450a506d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: c1c8defa12c0ce843bdcdd68dc394db2, type: 2}
+  item: {fileID: 11400000, guid: c1c8defa12c0ce843bdcdd68dc394db2, type: 2}
 --- !u!61 &1783289121338244674
 BoxCollider2D:
   m_ObjectHideFlags: 0
