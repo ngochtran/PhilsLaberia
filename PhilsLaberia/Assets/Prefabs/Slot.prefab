@@ -95,10 +95,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 391817675928432195}
   itemButton: {fileID: 2846158196840796426}
-  description: {fileID: 0}
-  descriptionTitle: {fileID: 0}
-  descriptionText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &2846158196840796426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +159,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 40, y: 40}
+  m_CellSize: {x: 75, y: 75}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2

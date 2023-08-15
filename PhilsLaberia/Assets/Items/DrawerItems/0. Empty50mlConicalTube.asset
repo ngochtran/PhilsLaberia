@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059dda1e3d2b83647b7f855846caeba7, type: 3}
+  m_Name: 0. Empty50mlConicalTube
+  m_EditorClassIdentifier: 
+  id: 0
+  itemName: Empty 50 mL Conical Tube
+  value: 0
+  description: Compact 50 mL tube for liquid storage & handling. Versatile lab essential.
+  icon: {fileID: 201130820, guid: fdf2b89862471de4583c0bd3dd908416, type: 3}
+  isPlaceable: 0

@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
+    private bool isPopUpActive = false;
+
 
     // Animation Variables 
     public Animator animator;
@@ -30,34 +32,49 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        if (horizontalInput != 0 || verticalInput != 0)
+        if (isPopUpActive)
         {
-            moving = 1;
-        } else {
             moving = 0;
+            animator.SetFloat("Speed", moving);
+            rb.velocity = Vector2.zero;
         }
 
-        // And move our character in the world. The bounding is automatically handled by KeepActorInBounds
-        Vector2 movement = new Vector2(horizontalInput, verticalInput);
-        rb.velocity = movement * speed;
-
-        animator.SetFloat("Horizontal", horizontalInput);
-        animator.SetFloat("Vertical", verticalInput);
-        animator.SetFloat("Speed", moving);
-
-        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        if (!isPopUpActive)
         {
-            animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
-            animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
+            float horizontalInput = Input.GetAxis("Horizontal");
+            float verticalInput = Input.GetAxis("Vertical");
+
+            if (horizontalInput != 0 || verticalInput != 0)
+            {
+                moving = 1;
+            }
+            else
+            {
+                moving = 0;
+            }
+
+            // And move our character in the world. The bounding is automatically handled by KeepActorInBounds
+            Vector2 movement = new Vector2(horizontalInput, verticalInput);
+            rb.velocity = movement * speed;
+
+            animator.SetFloat("Horizontal", horizontalInput);
+            animator.SetFloat("Vertical", verticalInput);
+            animator.SetFloat("Speed", moving);
+
+            if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+            {
+                animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+                animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.E))
             CheckInteraction();
 
+    }
+    public void SetPopUpActive(bool active)
+    {
+        isPopUpActive = active;
     }
 
     public void OpenInteractableIcon()
