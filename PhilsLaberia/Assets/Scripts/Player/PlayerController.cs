@@ -9,11 +9,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 10.0f;
 
-    private float horizontalInput;
-    private float verticalInput;
-
-    Vector2 movement;
-
     private bool isPopUpActive = false;
 
 

@@ -4,8 +4,11 @@ using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
-    public Transform itemGrid;
-    public GameObject inventoryUI;
+    [SerializeField]
+    private Transform itemGrid;
+    
+    [SerializeField]
+    private GameObject inventoryUI;
 
     Inventory inventory;
 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 48. BFPE.coliLiquidCulture
   m_EditorClassIdentifier: 
   id: 48
-  itemName: 'BFP E.coli Liquid Culture '
+  itemName: BFP E.coli Liquid Culture
   value: 0
   description: Overnight culture of BFP Transformed E. coli in LB broth.
   icon: {fileID: -82184384, guid: ff2b836c4b0f69342bf15fe0b386e073, type: 3}

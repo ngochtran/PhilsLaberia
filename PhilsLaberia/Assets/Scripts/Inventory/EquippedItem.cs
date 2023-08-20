@@ -1,21 +1,14 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class EquippedItem : MonoBehaviour
 {
-    #region Singleton
     public static EquippedItem instance;
 
     private void Awake()
     {
         instance = this;
     }
-
-    #endregion
 
     [SerializeField]
     private Button equippedItemButton;
@@ -37,36 +30,49 @@ public class EquippedItem : MonoBehaviour
     {
         if (equippedItem != null)
         {
-            bool notFull = Inventory.instance.Add(equippedItem); // Return the equipped item to inventory
+            bool notFull = Inventory.instance.Add(equippedItem); // Assuming Inventory.instance.Add() returns a bool
             if (notFull)
             {
-                equippedItem = null; // Clear the equipped item
-                equippedItemImage.sprite = null; // Update the button's image to reflect no equipped item
-                itemCarrying.SetActive(false);
-            } 
+                RemoveFromEquipped();
+            }
         }
+    }
+
+    public void RemoveFromEquipped()
+    {
+        equippedItem = null;
+        equippedItemImage.sprite = null;
+        itemCarrying.SetActive(false);
     }
 
     public void Equip(Item item)
     {
-        if (equippedItem == null)
+        if (equippedItem != null)
         {
-            equippedItem = item;
-        }
-        else
-        {
-            Inventory.instance.Add(equippedItem);
-            equippedItem = item;
+            Inventory.instance.Add(equippedItem); // Assuming Inventory.instance.Add() adds the item to the inventory
         }
 
+        equippedItem = item;
         equippedItemImage.sprite = equippedItem.icon;
 
-        // Get the SpriteRenderer component attached to the itemCarrying GameObject
         SpriteRenderer itemCarryingSpriteRenderer = itemCarrying.GetComponent<SpriteRenderer>();
 
-        itemCarryingSpriteRenderer.sprite = equippedItem.icon; // Set the sprite of the SpriteRenderer
+        itemCarryingSpriteRenderer.sprite = equippedItem.icon;
         itemCarrying.SetActive(true);
     }
 
-}
+    public void ChangeItem(Item newItem)
+    {
+        equippedItem = newItem;
+        equippedItemImage.sprite = equippedItem.icon;
 
+        SpriteRenderer itemCarryingSpriteRenderer = itemCarrying.GetComponent<SpriteRenderer>();
+
+        itemCarryingSpriteRenderer.sprite = equippedItem.icon;
+    }
+
+    public Item GetEquippedItem()
+    {
+        return equippedItem;
+    }
+}

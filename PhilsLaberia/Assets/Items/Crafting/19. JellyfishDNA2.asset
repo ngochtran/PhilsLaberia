@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3d81f0dcf0de7d40bd99d71e475a424, type: 3}
-  m_Name: Test
+  m_Name: 19. JellyfishDNA2
   m_EditorClassIdentifier: 
-  requiredIngredients: Empty 1.5 mL Eppendorf Tube, Empty 50 mL Conical Tube
-  resultingProduct: {fileID: 11400000, guid: 6ece13cb720338e4fbe54e1c0ef9f4d2, type: 2}
+  requiredIngredients: 1, 15, 32
+  resultingProduct: {fileID: 11400000, guid: 1e24f3fdc5ea4124fbe892141c55c8b6, type: 2}

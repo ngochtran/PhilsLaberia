@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -31,7 +30,7 @@ public class RecipeManager : MonoBehaviour
 
     public string sortAndConcatenate(List<Item> craftingSet)
     {
-        List<string> itemNames = craftingSet.Select(item => item.itemName).ToList();
+        List<string> itemNames = craftingSet.Select(item => item.id).ToList();
         itemNames.Sort();
 
         return string.Join(", ", itemNames);

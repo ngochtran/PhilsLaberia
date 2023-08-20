@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 26
   itemName: Filled Ice Bucket
-  value: 0
   description: A bucket filled with ice. Perfect for temperature sensitive experiments.
-  icon: {fileID: -2119264316, guid: f293c7a9fe763434db2f7456f3e66df4, type: 3}
-  isPlaceable: 0
+  icon: {fileID: -1735739009, guid: 40aec9c9aee1e7147ae44527cc496378, type: 3}
+  isPlaceable: 1

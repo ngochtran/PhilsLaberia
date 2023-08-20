@@ -56,7 +56,6 @@ public class ProductSlot : MonoBehaviour, IPointerClickHandler
         {
             ProductClearSlot();
         }
-        Debug.Log(sortedItemNames);
     }
 
     private void ProductAddItem(Item newItem)

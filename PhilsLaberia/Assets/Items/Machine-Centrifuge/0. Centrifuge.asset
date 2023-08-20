@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c82748aea11d1241bae7bcb4878ba0d, type: 3}
+  m_Name: 0. Centrifuge
+  m_EditorClassIdentifier: 
+  recipesArray:
+  - {fileID: 11400000, guid: 69deef317cb7f0444a3fc15b4045d3a5, type: 2}
+  - {fileID: 11400000, guid: 0377479da29cdae40a9a1f8ce230327b, type: 2}
+  - {fileID: 11400000, guid: 34bebfdce04573048b9892764368c31a, type: 2}
+  - {fileID: 11400000, guid: e944c905642c1394883d28572cc12562, type: 2}
+  - {fileID: 11400000, guid: 1ef9c153c8975b040af50391f2c1dbc2, type: 2}
+  - {fileID: 11400000, guid: 9977db6e04e11e841bac2367420a829a, type: 2}
+  - {fileID: 11400000, guid: 12816c164186b404cb1799c99d2bd492, type: 2}

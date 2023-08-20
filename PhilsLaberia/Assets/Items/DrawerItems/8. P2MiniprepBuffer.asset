@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 8
   itemName: P2 Miniprep Buffer Aliquot
-  value: 0
   description: A lysis buffer used to lyse suspended bacterial solution in miniprep
     to extract DNA from cells.
   icon: {fileID: 1397345022, guid: fdf2b89862471de4583c0bd3dd908416, type: 3}

@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 70
   itemName: Empty Ice Bucket
-  value: 0
   description: "Used to hold ice. Hopefully it has good insulation\u2026"
-  icon: {fileID: 677779667, guid: 0a8ac4d4905572743a79573035aa996c, type: 3}
-  isPlaceable: 0
+  icon: {fileID: 999916799, guid: 40aec9c9aee1e7147ae44527cc496378, type: 3}
+  isPlaceable: 1

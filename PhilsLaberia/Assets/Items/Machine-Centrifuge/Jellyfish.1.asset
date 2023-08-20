@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c82748aea11d1241bae7bcb4878ba0d, type: 3}
-  m_Name: 0. AllRecipes
+  m_Script: {fileID: 11500000, guid: e3d81f0dcf0de7d40bd99d71e475a424, type: 3}
+  m_Name: Jellyfish.1
   m_EditorClassIdentifier: 
-  recipesArray:
-  - {fileID: 11400000, guid: c332f6a03656b904eb06b1b6b0db71cf, type: 2}
+  requiredIngredients: 33
+  resultingProduct: {fileID: 11400000, guid: e7148ecb6a6ff5345b9bac9a31f2bf61, type: 2}

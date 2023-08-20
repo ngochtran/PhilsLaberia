@@ -1,23 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class ItemPickUp : Interactable
+public class ItemPickUp : MonoBehaviour
 {
     public Item item;
-    public override void Interact()
+
+    private void OnMouseDown()
     {
         PickUp();
     }
 
     void PickUp()
     {
-        bool wasPickedUp = Inventory.instance.Add(item);
-
-        if (wasPickedUp)
+        Machine machine = GetComponentInParent<Machine>(); // Get the parent Machine component
+        if (machine != null && machine.numSlots == 0) // Check if numSlots is 0
         {
-           Destroy(gameObject);
+            if (EquippedItem.instance.GetEquippedItem() == null)
+            {
+                EquippedItem.instance.Equip(item);
+                Destroy(gameObject);
+            }
         }
     }
 }
