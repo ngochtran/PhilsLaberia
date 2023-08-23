@@ -1,12 +1,16 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
-using static UnityEditor.Progress;
 
 public class Machine : Interactable
 {
+
+    [SerializeField]
+    private SpriteRenderer machineSpriteRenderer;
+
+    private Sprite originalSprite;
+
+    [SerializeField]
+    private Sprite finalSprite; // Reference to the final sprite if any
 
     [SerializeField]
     private Transform machineSlotParent; // Reference to the parent transform for machine slots
@@ -31,6 +35,11 @@ public class Machine : Interactable
 
     public int numSlots = 0;
 
+    private void Awake()
+    {
+        originalSprite = machineSpriteRenderer.sprite;
+    }
+
     public override void Interact()
     {
         Item equippedItem = EquippedItem.instance.GetEquippedItem();
@@ -50,7 +59,7 @@ public class Machine : Interactable
         MachineSlot[] slots = machineSlotParent.GetComponentsInChildren<MachineSlot>();
         foreach (MachineSlot slot in slots)
         {
-            slot.StartTimer(); // Implement a StartTimer method in MachineSlot to set timerRunning to true
+            slot.StartTimer();
         }
     }
 
@@ -59,7 +68,7 @@ public class Machine : Interactable
         MachineSlot[] slots = machineSlotParent.GetComponentsInChildren<MachineSlot>();
         foreach (MachineSlot slot in slots)
         {
-            slot.PauseTimer(); // Implement a PauseTimer method in MachineSlot to set timerRunning to false
+            slot.PauseTimer();
         }
     }
 
@@ -76,13 +85,23 @@ public class Machine : Interactable
 
     public void CheckTimerCondition()
     {
-        if (numSlots % multiplier == 0)
+        if (numSlots % multiplier == 0 && numSlots > 0)
         {
             StartAllTimers();
+            ChangeMachineSprite(finalSprite); // Change sprite to the final sprite
         }
         else
         {
             PauseAllTimers();
+            ChangeMachineSprite(originalSprite);
+        }
+    }
+
+    private void ChangeMachineSprite(Sprite newSprite)
+    {
+        if (machineSpriteRenderer != null && newSprite != null)
+        {
+            machineSpriteRenderer.sprite = newSprite;
         }
     }
 

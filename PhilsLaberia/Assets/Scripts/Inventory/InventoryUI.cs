@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
@@ -14,13 +12,23 @@ public class InventoryUI : MonoBehaviour
 
     InventorySlot[] slots;
 
-    // Start is called before the first frame update
     void Start()
     {
         inventory = Inventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
 
         slots = itemGrid.GetComponentsInChildren<InventorySlot>();
+
+        if (inventory.items.Count > 0)
+        {
+            for (int i = 0; i < inventory.items.Count; i++)
+            {
+                if (inventory.items[i] != null)
+                {
+                    slots[i].AddItem(inventory.items[i]);
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -29,6 +37,7 @@ public class InventoryUI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
+            SoundEffects.instance.playMenu();
         }
     }
 

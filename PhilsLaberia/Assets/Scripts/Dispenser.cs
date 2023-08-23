@@ -21,6 +21,15 @@ public class Dispenser : Interactable
         {
             // Dispense the returned item
             EquippedItem.instance.ChangeItem(returnedItem);
+
+            if (currentlyEquipped.id == "70")
+            {
+                SoundEffects.instance.playIce();
+            }
+            else if (currentlyEquipped.id == "0")
+            {
+                SoundEffects.instance.playWater();
+            }
         }
     }
 }

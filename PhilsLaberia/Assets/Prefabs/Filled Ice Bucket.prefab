@@ -248,6 +248,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCounter: 0
+  machineSpriteRenderer: {fileID: 746247348434376344}
+  finalSprite: {fileID: 0}
   machineSlotParent: {fileID: 2946051160588635738}
   machineSlotPrefab: {fileID: 4358713836868711267, guid: f610fd0e214a57748b7a4a00b8489e29, type: 3}
   timeCycle: 5
@@ -255,7 +257,7 @@ MonoBehaviour:
   multiplier: 1
   compatibleItems:
   - {fileID: 11400000, guid: 54908f601b25d9144923c7a0f1bd9816, type: 2}
-  - {fileID: 11400000, guid: 096e4d0d0e1799342897da377f24852e, type: 2}
+  - {fileID: 11400000, guid: 77ab4225bbc27e74c81487f6aab5f281, type: 2}
   recipeManager: {fileID: 2511756921058366161}
   numSlots: 0
 --- !u!114 &2511756921058366161

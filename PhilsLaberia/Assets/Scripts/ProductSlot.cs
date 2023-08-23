@@ -31,7 +31,7 @@ public class ProductSlot : MonoBehaviour, IPointerClickHandler
             craftingManager.ClearCraftingSet();
             ProductClearSlot();
             ClearAllCraftingSlots();
-
+            SoundEffects.instance.playPop();
         }
     }
 

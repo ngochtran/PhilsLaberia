@@ -34,6 +34,7 @@ public class EquippedItem : MonoBehaviour
             if (notFull)
             {
                 RemoveFromEquipped();
+                SoundEffects.instance.playPop();
             }
         }
     }
@@ -59,6 +60,7 @@ public class EquippedItem : MonoBehaviour
 
         itemCarryingSpriteRenderer.sprite = equippedItem.icon;
         itemCarrying.SetActive(true);
+        SoundEffects.instance.playPop();
     }
 
     public void ChangeItem(Item newItem)

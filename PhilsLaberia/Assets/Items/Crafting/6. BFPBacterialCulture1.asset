@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d81f0dcf0de7d40bd99d71e475a424, type: 3}
   m_Name: 6. BFPBacterialCulture1
   m_EditorClassIdentifier: 
-  requiredIngredients: 13, 5, 69
+  requiredIngredients: 13, 2, 5, 69
   resultingProduct: {fileID: 11400000, guid: 27ee669cb2c235b46a14ad42c5f2e5cd, type: 2}

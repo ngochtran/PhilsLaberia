@@ -68,6 +68,7 @@ public class StorageSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         if (item != null)
         {
             Inventory.instance.Add(item);
+            SoundEffects.instance.playPop();
         }
     }
 }

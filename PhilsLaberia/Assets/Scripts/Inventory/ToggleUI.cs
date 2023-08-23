@@ -10,5 +10,6 @@ public class ToggleUI : MonoBehaviour
     public void ToggleInventory()
     {
         inventoryUI.SetActive(!inventoryUI.activeSelf);
+        SoundEffects.instance.playMenu();
     }
 }

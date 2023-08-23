@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 27. Gibson1
   m_EditorClassIdentifier: 
   requiredIngredients: 1, 21, 22, 25, 42
-  resultingProduct: {fileID: 11400000, guid: 014d57e69f2f04d4d9f9f21501bc605d, type: 2}
+  resultingProduct: {fileID: 11400000, guid: faa1023e42114b94e96d71434bc0e2e1, type: 2}

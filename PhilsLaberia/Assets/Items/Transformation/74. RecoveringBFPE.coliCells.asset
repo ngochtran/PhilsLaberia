@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 74
   itemName: Recovering BFP E.coli Cells
-  value: 0
-  description: The cells are recovering! Put it on ice.
-  icon: {fileID: 1773787300, guid: f302e2f548de0be4796e7b91a8bbd551, type: 3}
+  description: The cells are recovering! Put it in the shaker.
+  icon: {fileID: 21300000, guid: da17b927923c0d54c8335e756a46836f, type: 3}
   isPlaceable: 0

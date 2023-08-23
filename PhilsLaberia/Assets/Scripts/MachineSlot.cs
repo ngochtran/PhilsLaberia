@@ -28,6 +28,7 @@ public class MachineSlot : MonoBehaviour, IPointerClickHandler
         Inventory.instance.Add(item);
         machine.DecreaseNumSlots();
         machine.CheckTimerCondition();
+        SoundEffects.instance.playPop();
         Destroy(gameObject);
     }
 
@@ -75,6 +76,7 @@ public class MachineSlot : MonoBehaviour, IPointerClickHandler
     {
         // Change the item and its corresponding image
         Item craftedItem = recipeManager.retrieveCraftedItem(item.id); // Get the crafted item from the recipe manager
+        SoundEffects.instance.playBell();
         if (craftedItem != null)
         {
             item = craftedItem; // Update the item

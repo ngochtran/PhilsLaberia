@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 45. ImagedElectrophoresisGel(Ran)
   m_EditorClassIdentifier: 
   id: 45
-  itemName: Imaged Electrophoresis Gel (Ran)
-  value: 0
-  description: Very pretty bands! Phil will be pleased.
+  itemName: Imaged Gel (Ran)
+  description: Very pretty bands! Dr. Ring will be pleased.
   icon: {fileID: 606446547, guid: 0a8ac4d4905572743a79573035aa996c, type: 3}
   isPlaceable: 0

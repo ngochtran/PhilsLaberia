@@ -36,6 +36,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, 
     {
         UseItem();
         ClearSlot();
+        SoundEffects.instance.playPop();
     }
 
     /* On Hover: if there is an item, display item information */
@@ -96,10 +97,12 @@ public class InventorySlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, 
                 originalSlot.AddItem(targetItem);
                 originalSlot.itemButton.interactable = targetButton;
                 targetSlot.itemButton.interactable = originalButton;
+                SoundEffects.instance.playPop();
             } else
             {
                 originalSlot.ClearSlot();
                 targetSlot.AddItem(originalItem);
+                SoundEffects.instance.playPop();
             }
         }
     }

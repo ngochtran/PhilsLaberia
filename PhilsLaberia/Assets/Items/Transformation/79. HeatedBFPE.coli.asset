@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 059dda1e3d2b83647b7f855846caeba7, type: 3}
-  m_Name: 64. MinipreppedpBLUEPlasmid
+  m_Name: 79. HeatedBFPE.coli
   m_EditorClassIdentifier: 
-  id: 64
-  itemName: Miniprepped pBLUE in Spin Column
-  value: 0
-  description: "Move the liquid from the collection tube to an Eppendorf! That\u2019s
-    pBLUE! "
-  icon: {fileID: -669973515, guid: ff2b836c4b0f69342bf15fe0b386e073, type: 3}
+  id: 79
+  itemName: Heated BFP E.coli
+  description: 'Straight out of the waterbath! Time to heatshock on ice. '
+  icon: {fileID: 528666303, guid: f302e2f548de0be4796e7b91a8bbd551, type: 3}
   isPlaceable: 0

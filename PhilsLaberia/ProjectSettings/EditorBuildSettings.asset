@@ -6,6 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/StartScreen.unity
+    guid: e5d2c7200cdb048418ad3aa2e9428d22
+  - enabled: 1
+    path: Assets/Scenes/LevelScreen.unity
+    guid: f410a189e22297541a1a7b431506ef34
+  - enabled: 1
+    path: Assets/Scenes/Lab Tour.unity
+    guid: 64f6b896c359f65439c22957b5245421
+  - enabled: 1
+    path: Assets/Scenes/DNA Extraction.unity
+    guid: a6f81052c7d91864aa27db9b95e6153d
+  - enabled: 1
+    path: Assets/Scenes/GFP PCR.unity
+    guid: 2c8442b40641a3f43bd4c543efa3527c
+  - enabled: 1
+    path: Assets/Scenes/Gel Electrophoresis.unity
+    guid: 7850eb19c6a63424386eead30a771de1
+  - enabled: 1
+    path: Assets/Scenes/Gibson Assembly.unity
+    guid: 0a4f2ca8a66e24f4fae3470272192b93
+  - enabled: 1
+    path: Assets/Scenes/Plated E.coli.unity
+    guid: 24e4e1413aa367e45bde6a500f13adfc
+  - enabled: 1
+    path: Assets/Scenes/Liquid Culture.unity
+    guid: e39063f9fe2db0847b339750997a6898
+  - enabled: 1
+    path: Assets/Scenes/Transformation.unity
+    guid: d8973f33403c9c84bac1fa41e8f56f8e
+  - enabled: 1
+    path: Assets/Scenes/Miniprep.unity
+    guid: f0de2d2eaf3fac6499c7b239bdd5bf84
   m_configObjects: {}

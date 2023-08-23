@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BFPTransformation.1
   m_EditorClassIdentifier: 
   requiredIngredients: 72
-  resultingProduct: {fileID: 11400000, guid: 0f99a4b4c05c61f4bbc6ca0971674c30, type: 2}
+  resultingProduct: {fileID: 11400000, guid: 77ab4225bbc27e74c81487f6aab5f281, type: 2}

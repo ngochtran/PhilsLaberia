@@ -1,8 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class CraftingManager : MonoBehaviour
 {
@@ -14,12 +12,14 @@ public class CraftingManager : MonoBehaviour
     {
         craftingSet.Add(item);
         OnCraftingSetChanged?.Invoke(craftingSet);
+        SoundEffects.instance.playPop();
     }
 
     public void CraftRemove(Item item)
     {
         craftingSet.Remove(item);
         OnCraftingSetChanged?.Invoke(craftingSet);
+        SoundEffects.instance.playPop();
     }
 
     public void ClearCraftingSet()

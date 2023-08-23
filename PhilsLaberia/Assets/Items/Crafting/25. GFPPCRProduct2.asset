@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d81f0dcf0de7d40bd99d71e475a424, type: 3}
   m_Name: 25. GFPPCRProduct2
   m_EditorClassIdentifier: 
-  requiredIngredients: 16, 17, 40
+  requiredIngredients: 16, 17, 19, 40
   resultingProduct: {fileID: 11400000, guid: bd4e146c2ca83cc45948b2a1a5f2fd29, type: 2}

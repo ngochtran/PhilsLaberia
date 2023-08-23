@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -26,6 +24,7 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
+
     public bool Add(Item item)
     {
         // Not Enough Space to Add Item
@@ -44,8 +43,5 @@ public class Inventory : MonoBehaviour
     public void Remove(Item item)
     {
         items.Remove(item);
-
-        //if (onItemChangedCallback != null)
-            //onItemChangedCallback.Invoke();
     }
 }

@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 73
   itemName: Heatshocked BFP E.coli
-  value: 0
   description: 'DNA has entered the cell. Add recovery medium to help improve cell
     viability. '
-  icon: {fileID: 528666303, guid: f302e2f548de0be4796e7b91a8bbd551, type: 3}
+  icon: {fileID: 1773787300, guid: f302e2f548de0be4796e7b91a8bbd551, type: 3}
   isPlaceable: 0
